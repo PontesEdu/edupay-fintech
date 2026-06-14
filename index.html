@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPay — Dashboard</title>
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- HEADER -->
+    <header class="header flex items-center justify-between">
+        <div class="logo flex items-center gap-2">
+            <div class="logo-box">E</div>
+            <span class="logo-nome font-bold">EduPay</span>
+        </div>
+        <button class="avatar-btn rounded-full" title="Perfil do usuário">JP</button>
+    </header>
+
+    <main>
+        <!-- Area de saldo-->
+        <section class="area-saldo">
+            <p class="saldo-label text-sm">Saldo Disponível</p>
+            <div class="saldo-linha flex items-center justify-between">
+                <span class="saldo-valor font-bold">R$ 1.450,00</span>
+                <button class="btn-olho" title="Ocultar saldo">&#9673;</button>
+            </div>
+        </section>
+        <!-- AÇÕES RÁPIDAS -->
+        <section class="secao-acoes grid grid-cols-4">
+            <a href="#" class="acao flex flex-col items-center">
+                <div class="acao-circulo rounded-full">&#128260;</div>
+                <span class="acao-label text-center">Pix</span>
+                <span class="acao-sublabel text-center">Enviar e receber</span>
+            </a>
+            <a href="#" class="acao flex flex-col items-center">
+                <div class="acao-circulo rounded-full">&#128196;</div>
+                <span class="acao-label text-center">Pagar Boleto</span>
+                <span class="acao-sublabel text-center">Escaneie ou digite</span>
+            </a>
+            <a href="#" class="acao flex flex-col items-center">
+                <div class="acao-circulo rounded-full">&#128100;</div>
+                <span class="acao-label text-center">Cobrar Amigo</span>
+                <span class="acao-sublabel text-center">Crie uma cobrança</span>
+            </a>
+            <a href="#" class="acao flex flex-col items-center">
+                <div class="acao-circulo rounded-full">&#128179;</div>
+                <span class="acao-label text-center">Cartões</span>
+                <span class="acao-sublabel text-center">Gerencie seus cartões</span>
+            </a>
+        </section>
+        <!-- Ultimas Trasacoes-->
+        <section class="secao-transacoes">
+            <div class="secao-titulo-linha flex justify-between items-center">
+                <h2 class="titulo-secao font-bold">Últimas Transações</h2>
+                <a href="#" class="link-ver-todas">Ver todas</a>
+            </div>
+            <!-- Pix Recebido -->
+            <div class="transacao flex items-center gap-3">
+                <div class="trans-icone icone-verde rounded-full">&#8595;</div>
+                <div class="trans-info flex-1">
+                    <p class="trans-nome font-semibold">Pix Recebido</p>
+                    <p class="trans-sub text-sm">Maria Eduarda</p>
+                </div>
+                <div class="trans-valor-col text-right">
+                    <span class="trans-valor positivo font-bold">+ R$ 250,00</span>
+                    <span class="trans-hora text-xs">Hoje, 14:32</span>
+                </div>
+            </div>
+            <!-- Compra no Debito -->
+            <div class="transacao flex items-center gap-3">
+                <div class="trans-icone icone-cinza rounded-full">&#128717;</div>
+                <div class="trans-info flex-1">
+                    <p class="trans-nome font-semibold">Compra no Débito</p>
+                    <p class="trans-sub text-sm">Livraria Cultura</p>
+                </div>
+                <div class="trans-valor-col text-right">
+                    <span class="trans-valor negativo font-bold">- R$ 89,90</span>
+                    <span class="trans-hora text-xs">Ontem, 10:15</span>
+                </div>
+            </div>
+            <!-- Pix Enviado -->
+            <div class="transacao flex items-center gap-3">
+                <div class="trans-icone icone-amarelo rounded-full">&#8593;</div>
+                <div class="trans-info flex-1">
+                    <p class="trans-nome font-semibold">Pix Enviado</p>
+                    <p class="trans-sub text-sm">João Pedro</p>
+                </div>
+                <div class="trans-valor-col text-right">
+                    <span class="trans-valor negativo font-bold">- R$ 120,00</span>
+                    <span class="trans-hora text-xs">22/06, 09:08</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</div>
+
+</body>
+</html>
