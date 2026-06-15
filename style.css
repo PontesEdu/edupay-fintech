@@ -303,10 +303,14 @@ body {
     }
 
     .app {
-        max-width: 720px;
+        max-width: 860px;
         border-radius: 20px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
         overflow: hidden;
+    }
+
+    .area-saldo {
+        margin: 16px 20px 0;
     }
 
     .secao-acoes {
@@ -314,8 +318,17 @@ body {
         margin: 16px 20px 0;
     }
 
-    .area-saldo {
-        margin: 16px 20px 0;
+    .acao {
+        padding: 38px 16px 42px;
+        gap: 12px;
+    }
+
+    .acao-label {
+        font-size: 12px;
+    }
+
+    .acao-sublabel {
+        font-size: 11px;
     }
 
     .secao-transacoes {
