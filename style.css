@@ -32,7 +32,6 @@ body {
    CONTAINER DO APP
 */
 .app {
-    max-width: 390px;
     margin: 0 auto;
     background-color: var(--cinza-fundo);
     min-height: 100vh;
@@ -270,12 +269,14 @@ body {
 
 .trans-valor-col {
     text-align: right;
+    flex-shrink: 0;
 }
 
 .trans-valor {
     font-size: 14px;
     font-weight: 700;
     display: block;
+    white-space: nowrap;
 }
 
 .positivo {
@@ -289,6 +290,7 @@ body {
 .trans-hora {
     font-size: 11px;
     color: var(--cinza-texto);
+    white-space: nowrap;
 }
 
 /*
