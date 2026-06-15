@@ -169,6 +169,18 @@ body {
     color: white;
 }
 
+.acao-circulo img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+.trans-icone img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
 .acao-label {
     font-size: 11px;
     font-weight: 500;
